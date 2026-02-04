@@ -1,0 +1,9 @@
+{
+  "name": "Research & Academic Blog",
+  "short_name": "ResearchBlog",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "description": "Personal academic research blog on AI, Machine Learning, and Adaptive Learning Systems"
+}

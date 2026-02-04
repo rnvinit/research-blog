@@ -1,0 +1,264 @@
+/* =============================
+   RESET & BASE
+============================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+/* =============================
+   HEADER
+============================= */
+header {
+    background: linear-gradient(135deg, #0b1220, #1e293b);
+    color: #fff;
+    text-align: center;
+    padding: 34px 16px;
+}
+
+header h1 {
+    font-size: 2.05rem;
+    margin-bottom: 6px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* =============================
+   NAVIGATION
+============================= */
+nav {
+    background: #e5e7eb;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #111;
+}
+
+nav a:hover {
+    color: #1d4ed8;
+}
+
+/* =============================
+   MAIN WRAPPER
+============================= */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+/* =============================
+   HEADINGS
+============================= */
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    border-bottom: 3px solid #1d4ed8;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+/* =============================
+   PARAGRAPHS
+============================= */
+main p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+/* =============================
+   POSTS (BLOG ENTRIES)
+============================= */
+.post {
+    background: #ffffff;
+    padding: 18px 20px;
+    border-left: 4px solid #1d4ed8;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.post h3 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.post a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* =============================
+   UTILITY BOXES (TOOLS / SECTIONS)
+============================= */
+.box {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 26px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* =============================
+   INPUTS
+============================= */
+input {
+    width: 100%;
+    max-width: 520px;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 6px 0;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1d4ed8;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+.btn-group {
+    margin-top: 6px;
+}
+
+button {
+    padding: 6px 14px;
+    margin: 4px 4px 0 0;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #1d4ed8;
+    color: white;
+}
+
+button:hover {
+    background: #163fa3;
+}
+
+/* =============================
+   LISTS
+============================= */
+ul {
+    margin-top: 6px;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+/* =============================
+   HORIZONTAL RULE
+============================= */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+    background: #e5e7eb;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.85rem;
+    color: #444;
+}
+/* =============================
+   VIBE CODE BOT (MINIMAL)
+============================= */
+#vibeBot {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 240px;
+    background: #0b1220;
+    color: #e5e7eb;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+#vibeBot strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #93c5fd;
+}
+
+#vibeBot p {
+    margin: 0;
+    line-height: 1.4;
+}
+/* =============================
+   VIBE ASSISTANT (FLOATING)
+============================= */
+#vibeBot {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #0b1220;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 10px;
+    max-width: 240px;
+    font-size: 0.85rem;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+#vibeBot strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+#vibeBot p {
+    opacity: 0.9;
+}

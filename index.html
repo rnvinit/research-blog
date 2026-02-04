@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Research & Academic Blog | Vinit Kumar Shukla</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Academic research blog on AI, Machine Learning, and Adaptive Learning Systems">
+
+    <link rel="stylesheet" href="./style.css?v=2">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body id="home">
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Research & Academic Blog</h1>
+    <p>Artificial Intelligence • Machine Learning • Adaptive Learning</p>
+</header>
+
+<!-- ================= NAVIGATION ================= -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#search">Search</a>
+    <a href="#citations">Citations</a>
+    <a href="#internal-search">My Posts</a>
+    <a href="#about">About</a>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+<!-- ================= SECTION: READ ================= -->
+<section>
+    <h2>Latest Research Posts</h2>
+
+    <section class="post">
+        <h3>
+            <a href="posts/ai-adaptive-learning.html">
+                AI-Driven Adaptive Learning using Q-Learning
+            </a>
+        </h3>
+        <p class="meta">January 2026 | Research Article</p>
+        <p>
+            Reinforcement-learning-based adaptive content personalization
+            focusing on engagement, cold-start challenges, and scalability.
+        </p>
+    </section>
+</section>
+
+<!-- ================= SECTION: THINK & DECIDE ================= -->
+<section id="workflow" class="box">
+    <h2>🧭 Research Workflow Assistant</h2>
+
+    <p style="font-size:0.9rem; color:#333;">
+        Describe what you want to do next in your research.
+        This assistant does <strong>not answer research questions</strong> —
+        it helps you choose the <strong>right scholarly action</strong>
+        (search literature, locate your notes, or prepare citations).
+    </p>
+
+    <input
+        id="assistantInput"
+        placeholder="e.g., find papers on adaptive learning, locate my post, generate citation"
+        onkeydown="assistantEnter(event)">
+
+    <p id="assistantResponse"
+       style="font-size:0.9rem; color:#444; margin-top:8px;"></p>
+</section>
+
+<!-- ================= SECTION: DISCOVER ================= -->
+<section id="search" class="box">
+    <h2>🔍 Literature Search</h2>
+
+    <p>
+        Search trusted academic sources directly.
+        Use focused keywords for better results.
+    </p>
+
+    <input id="searchQuery"
+           placeholder="e.g., adaptive learning Q-learning 2023"
+           onkeydown="handleEnter(event)">
+
+    <div class="btn-group">
+        <button onclick="searchScholar()">Google Scholar</button>
+        <button onclick="searchSemantic()">Semantic Scholar</button>
+        <button onclick="searchArxiv()">arXiv</button>
+        <button onclick="searchIEEE()">IEEE Xplore</button>
+    </div>
+
+    <h4 style="margin-top:10px;">Recent Searches</h4>
+    <ul id="history"></ul>
+</section>
+
+<!-- ================= SECTION: ORGANIZE ================= -->
+<section id="internal-search" class="box">
+    <h2>📂 Search My Research Notes</h2>
+
+    <p style="font-size:0.9rem;">
+        Locate your existing blog posts and research notes.
+        Useful when revisiting older ideas or preparing papers.
+    </p>
+
+    <input placeholder="Search inside my posts"
+           onkeyup="internalSearch(this.value)">
+    <ul id="internalResults"></ul>
+</section>
+
+<!-- ================= SECTION: REFERENCE ================= -->
+<section id="citations" class="box">
+    <h2>📑 Citation Generator</h2>
+
+    <p style="font-size:0.9rem;">
+        Generate basic IEEE or APA-style references
+        for quick drafts and internal documentation.
+    </p>
+
+    <input id="citeAuthor" placeholder="Author(s)">
+    <input id="citeTitle" placeholder="Paper Title">
+    <input id="citeYear" placeholder="Year">
+    <input id="citeVenue" placeholder="Journal / Conference">
+
+    <div class="btn-group">
+        <button onclick="generateIEEE()">IEEE</button>
+        <button onclick="generateAPA()">APA</button>
+    </div>
+
+    <pre id="citationOutput"></pre>
+</section>
+
+<!-- ================= SECTION: ABOUT ================= -->
+<section id="about" class="box">
+    <h2>About the Author</h2>
+    <p>
+        Vinit Kumar Shukla is a researcher in Artificial Intelligence and
+        Machine Learning with a focus on adaptive learning systems,
+        educational data mining, and AI-driven personalization in education.
+    </p>
+
+    <p style="font-size:0.9rem; color:#555;">
+        This blog functions as a research notebook, idea incubator,
+        and companion to academic publications.
+    </p>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    © 2026 • Research & Academic Blog • Academic Use Only
+</footer>
+
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+<!-- ================= VIBE CODE BOT (MINIMAL) ================= -->
+<div id="vibeBot">
+    <strong>Vibe Assistant</strong>
+    <p id="vibeText">
+        Focus on explaining methods, assumptions, and limitations.
+    </p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
